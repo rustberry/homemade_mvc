@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit tweet</title>
+</head>
+<body>
+    <form action="/update?id={{ t.id }}" method="post">
+        <input name="content" value="{{ t.content }}" >
+        <button>Edit tweet</button>
+    </form>
+</body>
+</html>

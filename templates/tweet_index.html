@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .comment {
+            border: 1px red solid;
+        }
+    </style>
+    <title>Tweets</title>
+</head>
+<body>
+    <form action="/add" method="post">
+        <input name="content">
+        <br>
+        <button type="submit">Post a new Tweet</button>
+    </form>
+    <br>
+
+    {% for t in tweets %}
+    <div>
+        <em>{{ User.find_by(id=t.user_id).username}}</em>说:<br>
+        <strong>{{ t.content }}</strong>
+        <a href="/edit?id={{ t.id }}">edit</a>
+        <a href="/delete?id={{ t.id }}">delete</a>
+        <a href="/comment?id={{ t.id }}">add comment</a>
+        <br>评论：<br>
+        {% for c in t.comments() %}
+            <div class="comment">
+                {{ c.content }}
+            </div>
+        {% endfor %}
+    </div>
+    <br>
+    {% endfor %}
+</body>
+</html>

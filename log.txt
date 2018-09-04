@@ -1,0 +1,228 @@
+23:28:29 start at :3000
+23:28:34 完整请求
+23:28:34 GET / HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/login
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+Cookie: session=eyJuZXciOiJuZXcgZmVhdHVyZSIsInVzZXJfbmFtZSI6InNlY3UifQ.DmvUeQ.Ynndv0tCj1E9xABgnJNO5H_1qa4; cookie_here=BigCookie; Pycharm-94cf1e4f=2f4e0495-c2de-4cb3-96ef-44dd1096bda0; user=qjehujunhehufhan
+
+
+23:28:34 请求结束
+23:28:34 cookie ['session=eyJuZXciOiJuZXcgZmVhdHVyZSIsInVzZXJfbmFtZSI6InNlY3UifQ.DmvUeQ.Ynndv0tCj1E9xABgnJNO5H_1qa4', 'cookie_here=BigCookie', 'Pycharm-94cf1e4f=2f4e0495-c2de-4cb3-96ef-44dd1096bda0', 'user=qjehujunhehufhan']
+23:28:34 path and query / {}
+23:28:34 user_id  -1
+23:28:34 完整响应
+23:28:34 HTTP/1.1 302 OK
+Location: /login
+Content-Type: text/html
+
+
+23:28:34 响应结束
+23:28:34 完整请求
+23:28:34 GET /login HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/login
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+Cookie: session=eyJuZXciOiJuZXcgZmVhdHVyZSIsInVzZXJfbmFtZSI6InNlY3UifQ.DmvUeQ.Ynndv0tCj1E9xABgnJNO5H_1qa4; cookie_here=BigCookie; Pycharm-94cf1e4f=2f4e0495-c2de-4cb3-96ef-44dd1096bda0; user=qjehujunhehufhan
+
+
+23:28:34 请求结束
+23:28:34 cookie ['session=eyJuZXciOiJuZXcgZmVhdHVyZSIsInVzZXJfbmFtZSI6InNlY3UifQ.DmvUeQ.Ynndv0tCj1E9xABgnJNO5H_1qa4', 'cookie_here=BigCookie', 'Pycharm-94cf1e4f=2f4e0495-c2de-4cb3-96ef-44dd1096bda0', 'user=qjehujunhehufhan']
+23:28:34 path and query /login {}
+23:28:34 login, cookies {'cookie_here': 'BigCookie', 'user': 'qjehujunhehufhan', 'Pycharm-94cf1e4f': '2f4e0495-c2de-4cb3-96ef-44dd1096bda0', 'session': 'eyJuZXciOiJuZXcgZmVhdHVyZSIsInVzZXJfbmFtZSI6InNlY3UifQ.DmvUeQ.Ynndv0tCj1E9xABgnJNO5H_1qa4'}
+23:28:34 完整响应
+23:28:34 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+        <a href="/register">register</a>
+    </form>
+    <h3></h3>
+</body>
+</html>
+23:28:34 响应结束
+23:28:37 完整请求
+23:28:37 POST /login HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Content-Length: 25
+Cache-Control: max-age=0
+Origin: http://localhost:3000
+Upgrade-Insecure-Requests: 1
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/login
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+Cookie: session=eyJuZXciOiJuZXcgZmVhdHVyZSIsInVzZXJfbmFtZSI6InNlY3UifQ.DmvUeQ.Ynndv0tCj1E9xABgnJNO5H_1qa4; cookie_here=BigCookie; Pycharm-94cf1e4f=2f4e0495-c2de-4cb3-96ef-44dd1096bda0; user=qjehujunhehufhan
+
+username=aaa&password=123
+23:28:37 请求结束
+23:28:37 cookie ['session=eyJuZXciOiJuZXcgZmVhdHVyZSIsInVzZXJfbmFtZSI6InNlY3UifQ.DmvUeQ.Ynndv0tCj1E9xABgnJNO5H_1qa4', 'cookie_here=BigCookie', 'Pycharm-94cf1e4f=2f4e0495-c2de-4cb3-96ef-44dd1096bda0', 'user=qjehujunhehufhan']
+23:28:37 path and query /login {}
+23:28:37 login, cookies {'cookie_here': 'BigCookie', 'user': 'qjehujunhehufhan', 'Pycharm-94cf1e4f': '2f4e0495-c2de-4cb3-96ef-44dd1096bda0', 'session': 'eyJuZXciOiJuZXcgZmVhdHVyZSIsInVzZXJfbmFtZSI6InNlY3UifQ.DmvUeQ.Ynndv0tCj1E9xABgnJNO5H_1qa4'}
+23:28:37 kwargs,  {'username': 'aaa'} <class 'dict'>
+23:28:37 kwargs,  {'username': 'aaa'} <class 'dict'>
+23:28:37 headers response {'Set-Cookie': 'user=unhfanxnxrqarnxj'}
+23:28:37 session {'unhfanxnxrqarnxj': 1}
+23:28:37 完整响应
+23:28:37 HTTP/1.1 302 OK
+Location: /
+Content-Type: text/html
+Set-Cookie: user=unhfanxnxrqarnxj
+
+
+23:28:37 响应结束
+23:28:37 完整请求
+23:28:37 GET / HTTP/1.1
+Host: localhost:3000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+Referer: http://localhost:3000/login
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7
+Cookie: session=eyJuZXciOiJuZXcgZmVhdHVyZSIsInVzZXJfbmFtZSI6InNlY3UifQ.DmvUeQ.Ynndv0tCj1E9xABgnJNO5H_1qa4; cookie_here=BigCookie; Pycharm-94cf1e4f=2f4e0495-c2de-4cb3-96ef-44dd1096bda0; user=unhfanxnxrqarnxj
+
+
+23:28:37 请求结束
+23:28:37 cookie ['session=eyJuZXciOiJuZXcgZmVhdHVyZSIsInVzZXJfbmFtZSI6InNlY3UifQ.DmvUeQ.Ynndv0tCj1E9xABgnJNO5H_1qa4', 'cookie_here=BigCookie', 'Pycharm-94cf1e4f=2f4e0495-c2de-4cb3-96ef-44dd1096bda0', 'user=unhfanxnxrqarnxj']
+23:28:37 path and query / {}
+23:28:37 user_id  1
+23:28:37 kwargs,  {'id': 2} <class 'dict'>
+23:28:37 kwargs,  {'tweet_id': 3} <class 'dict'>
+23:28:37 kwargs,  {'id': 1} <class 'dict'>
+23:28:37 kwargs,  {'tweet_id': 5} <class 'dict'>
+23:28:37 kwargs,  {'id': 1} <class 'dict'>
+23:28:37 kwargs,  {'tweet_id': 6} <class 'dict'>
+23:28:37 kwargs,  {'id': 1} <class 'dict'>
+23:28:37 kwargs,  {'tweet_id': 7} <class 'dict'>
+23:28:37 kwargs,  {'id': 1} <class 'dict'>
+23:28:37 kwargs,  {'tweet_id': 8} <class 'dict'>
+23:28:37 完整响应
+23:28:37 HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .comment {
+            border: 1px red solid;
+        }
+    </style>
+    <title>Tweets</title>
+</head>
+<body>
+    <form action="/add" method="post">
+        <input name="content">
+        <br>
+        <button type="submit">Post a new Tweet</button>
+    </form>
+    <br>
+
+    
+    <div>
+        <em>asd</em>说:<br>
+        <strong>hahaha</strong>
+        <a href="/edit?id=3">edit</a>
+        <a href="/delete?id=3">delete</a>
+        <a href="/comment?id=3">add comment</a>
+        <br>评论：<br>
+        
+            <div class="comment">
+                What+are+you+laughing+at
+            </div>
+        
+    </div>
+    <br>
+    
+    <div>
+        <em>aaa</em>说:<br>
+        <strong>I+xin</strong>
+        <a href="/edit?id=5">edit</a>
+        <a href="/delete?id=5">delete</a>
+        <a href="/comment?id=5">add comment</a>
+        <br>评论：<br>
+        
+    </div>
+    <br>
+    
+    <div>
+        <em>aaa</em>说:<br>
+        <strong>澳门赌场上线啦</strong>
+        <a href="/edit?id=6">edit</a>
+        <a href="/delete?id=6">delete</a>
+        <a href="/comment?id=6">add comment</a>
+        <br>评论：<br>
+        
+            <div class="comment">
+                开心
+            </div>
+        
+            <div class="comment">
+                test
+            </div>
+        
+    </div>
+    <br>
+    
+    <div>
+        <em>aaa</em>说:<br>
+        <strong>今天没吃冰淇淋+存款+5！</strong>
+        <a href="/edit?id=7">edit</a>
+        <a href="/delete?id=7">delete</a>
+        <a href="/comment?id=7">add comment</a>
+        <br>评论：<br>
+        
+    </div>
+    <br>
+    
+    <div>
+        <em>aaa</em>说:<br>
+        <strong>test for plus and spaces</strong>
+        <a href="/edit?id=8">edit</a>
+        <a href="/delete?id=8">delete</a>
+        <a href="/comment?id=8">add comment</a>
+        <br>评论：<br>
+        
+            <div class="comment">
+                We made it! No space with plus!
+            </div>
+        
+    </div>
+    <br>
+    
+</body>
+</html>
+23:28:37 响应结束
